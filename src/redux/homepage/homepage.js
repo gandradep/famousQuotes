@@ -8,8 +8,19 @@ export const getAuthors = createAsyncThunk(
     async () => {
         const data = await fetch(urlApi)
         .then((response) => response.json());
-        console.log(data.results);
-    }
+        const authorList = [];
+        data.results.forEach((item) => {
+            const authorData = {
+                name: item.name,
+                slug: item.slug,
+                id: item._id,
+                quotes: item.quoteCount,
+                description: item.description,
+            };
+            authorList.push(authorData);
+        });        
+        return authorList;
+    },
 );
 
 const authorReducer = (state = [], action) => {
