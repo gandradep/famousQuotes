@@ -1,6 +1,6 @@
 import * as React from 'react';
 import '@testing-library/jest-dom'
-import { render, screen } from '@testing-library/react';
+import { render, screen, act } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import store from '../redux/store';
 import { Provider } from 'react-redux';
@@ -8,6 +8,15 @@ import Homepage from '../components/Homepage';
 import mockFetch from '../__mocks__/fetchAuthors';
 
 let windowFetchSpy;
+
+const MockHomepage = () => (
+  <BrowserRouter>
+    <Provider store={store}>
+      <Homepage />
+    </Provider>
+  </BrowserRouter>
+);
+
 
 describe('Homepage', () => {
   beforeEach(() => {
@@ -18,15 +27,15 @@ describe('Homepage', () => {
     jest.restoreAllMocks();
   });
   it('Fetching', async () => {
-    await render(
-      <BrowserRouter>
-      <Provider store={store}>
-        <Homepage />
-      </Provider>
-      </BrowserRouter>,
-    );
+    await render(<MockHomepage />);
     const titleElement = await screen.findByTestId("author-0");
-    screen.debug();
+    // screen.debug();
     expect(titleElement).toBeInTheDocument();
+  });
+  it('Test number elements', async () => {
+    await act( async () => render(<MockHomepage />));
+    const titleElement = await screen.findAllByTestId(/author-/i);
+    // screen.debug();
+    expect(titleElement.length).toBe(2);
   });
 });
