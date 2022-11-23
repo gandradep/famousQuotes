@@ -1,5 +1,4 @@
-const mockResponse = {
-    data: {
+const mockResponse = {   
         results:[
             {
                 name: "Cicero",
@@ -15,9 +14,16 @@ const mockResponse = {
                 description: "French",
                 _id:"ZyuVXKFVTZu8"
             }
-        ]
-    }
+        ]    
 };
-export default {
-    get: jest.fn().mockResolvedValue(mockResponse)
-}
+export default async function mockFetch(url) {
+    if(url.startsWith('https://quotable.io/authors') ) {
+      return {
+        ok: true,
+        status: 200,
+        json: async () => mockResponse,
+      };
+    }
+  
+    throw new Error(`Unhandled request: ${url}`);        
+  }
