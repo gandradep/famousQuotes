@@ -9,6 +9,7 @@ export const getAuthors = createAsyncThunk(
         const data = await fetch(urlApi)
         .then((response) => response.json());
         const authorList = [];
+        console.log(data);
         data.results.forEach((item) => {
             const authorData = {
                 name: item.name,
