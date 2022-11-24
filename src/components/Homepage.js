@@ -15,6 +15,10 @@ const Homepage = () => {
   return (
     <div className="dFlex wrap authorContainer">
       <h3 className={`w100 bgTitle ${classes.title}`}>famous quotes</h3>
+      <div className={`dFlex bgCLight w100 ${classes.container}`}>
+        <i className="fa-regular fa-comment" />
+        <h4 className={classes.divTitle}>WORLD QUOTES</h4>
+      </div>
       {authors?.map((author, index) => (
         <Author
           key={author.id}

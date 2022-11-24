@@ -4,3 +4,24 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+i {
+  font-size: 5rem;
+  width: 50%;
+  text-align: center;
+}
+
+.divTitle {
+  font-size: 2rem;
+  width: 50%;
+  text-align: center;
+  line-height: 50px;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
