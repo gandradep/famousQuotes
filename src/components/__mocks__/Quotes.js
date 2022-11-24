@@ -7,11 +7,11 @@ import classess from './quotes.module.css';
 const Quotes = () => {
   const dispatch = useDispatch();
   const quotes = useSelector((state) => state.quotes);
-  const objThunk = {
-    slug: 'test',
-    quotes: 9,
-  };
   useEffect(() => {
+    const objThunk = {
+      slug: 'test',
+      quotes: 9,
+    };
     dispatch(getQuotes(objThunk));
   }, [dispatch]);
   return (

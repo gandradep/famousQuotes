@@ -10,12 +10,13 @@ const Quotes = () => {
   const authors = useSelector((state) => state.authors);
   const quotes = useSelector((state) => state.quotes);
   const authorInfo = authors.filter((el) => el.slug === slug)[0];
-  const objThunk = {
-    slug,
-    quotes: authorInfo.quotes,
-  };
   useEffect(() => {
+    const objThunk = {
+      slug,
+      quotes: authorInfo.quotes,
+    };
     dispatch(getQuotes(objThunk));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dispatch]);
   return (
     <div>

@@ -4,7 +4,6 @@ Is an app that shows famous quotes, where you can click the quote thinker and se
 > This app uses ReactRouters
 >Tests for fetching data where done.
 > To run the project clone this repo install dependencies `npm install` and run the app `npm start`
-> Check the [deployed version](https://fanciful-moxie-2b27f1.netlify.app/)
 
 ## Built With
 
@@ -16,6 +15,11 @@ Is an app that shows famous quotes, where you can click the quote thinker and se
 - React Testing Library
 - Linters.
 - ReactRouter
+
+## Live Demo
+
+- Visit the [app](https://gandradep.github.io/API-basedWebApp/dist) on the browser.
+- Watch a [demo](https://www.loom.com/share/1df06cdfda404ce7bcd916e27be0cde5) of how it works.
 
 ## Authors
 
