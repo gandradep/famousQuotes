@@ -21,6 +21,7 @@ const Homepage = () => {
           name={author.name}
           slug={author.slug}
           quotes={author.quotes}
+          picture={author.picture}
         />
       ))}
     </div>

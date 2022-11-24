@@ -21,9 +21,10 @@ const Quotes = () => {
       <header>
         <NavLink to="/">
           <h3>&lt;</h3>
+          <h3>Quotes</h3>
         </NavLink>
-        <h2>{authorInfo.name}</h2>
       </header>
+      <h2>{authorInfo.name}</h2>
       <p>{authorInfo.description}</p>
       <ul>
         {quotes?.map((item) => (
