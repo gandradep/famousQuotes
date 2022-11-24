@@ -1,5 +1,3 @@
-
-
 .title {
   flex-grow: 1;
   text-align: center;
@@ -8,8 +6,8 @@
 
 header {
   padding-top: 10px;
-  padding-bottom: 10px; 
-  padding-right: 5px; 
+  padding-bottom: 10px;
+  padding-right: 5px;
 }
 
 span {
@@ -32,6 +30,7 @@ li {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 li:nth-child(odd) {
   background-color: #4268b1;
 }

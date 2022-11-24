@@ -14,6 +14,7 @@ export const getQuotes = createAsyncThunk(
     data.results.forEach((item) => {
       const quoteData = {
         content: item.content,
+        /* eslint-disable-next-line no-underscore-dangle */
         id: item._id,
       };
       quotesList.push(quoteData);

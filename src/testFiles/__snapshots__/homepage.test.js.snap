@@ -5,11 +5,27 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div />
+      <div
+        class="dFlex wrap authorContainer"
+      >
+        <h3
+          class="w100 bgTitle title"
+        >
+          famous quotes
+        </h3>
+      </div>
     </div>
   </body>,
   "container": <div>
-    <div />
+    <div
+      class="dFlex wrap authorContainer"
+    >
+      <h3
+        class="w100 bgTitle title"
+      >
+        famous quotes
+      </h3>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
