@@ -18,7 +18,7 @@ Is an app that shows famous quotes, where you can click the quote thinker and se
 
 ## Live Demo
 
-- Visit the [app](https://gandradep.github.io/API-basedWebApp/dist) on the browser.
+- Visit the [app](https://637f6588789aca0008cf38ac--profound-biscochitos-b105fe.netlify.app/) on the browser.
 - Watch a [demo](https://www.loom.com/share/1df06cdfda404ce7bcd916e27be0cde5) of how it works.
 
 ## Authors
