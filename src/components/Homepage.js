@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getAuthors } from '../redux/homepage/homepage';
 import Author from './Author';
+import classes from './homepage.module.css';
 
 const Homepage = () => {
   const dispatch = useDispatch();
@@ -12,7 +13,8 @@ const Homepage = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className="dFlex wrap authorContainer">
+      <h3 className={`w100 bgTitle ${classes.title}`}>famous quotes</h3>
       {authors?.map((author, index) => (
         <Author
           key={author.id}

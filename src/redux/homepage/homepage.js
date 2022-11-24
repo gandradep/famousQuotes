@@ -13,7 +13,7 @@ export const getAuthors = createAsyncThunk(
     let counter = 0;
     data.results.forEach((item) => {
       const authorData = {
-        name: item.name,
+        name: item.name.toUpperCase(),
         slug: item.slug,
         /* eslint-disable-next-line no-underscore-dangle */
         id: item._id,

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams, NavLink } from 'react-router-dom';
 import { getQuotes } from '../redux/quotes/quotes';
+import classess from './quotes.module.css';
 
 const Quotes = () => {
   const { slug } = useParams();
@@ -18,14 +19,20 @@ const Quotes = () => {
   }, [dispatch]);
   return (
     <div>
-      <header>
+      <header className="bgTitle dFlex">
         <NavLink to="/">
-          <h3>&lt;</h3>
-          <h3>Quotes</h3>
+          <span>&lt;</span>
         </NavLink>
+        <h3 className={classess.title}>quotes</h3>
       </header>
-      <h2>{authorInfo.name}</h2>
-      <p>{authorInfo.description}</p>
+      <div className={`bgCLight dFlex ${classess.author}`}>
+        <img src={authorInfo.picture} alt={authorInfo.name} />
+        <div>
+          <h2>{authorInfo.name}</h2>
+          <p>{authorInfo.description}</p>
+        </div>
+      </div>
+      <h4 className="bgTitle">MOST KNOWN QUOTES:</h4>
       <ul>
         {quotes?.map((item) => (
           <li key={item.id}>{item.content}</li>
