@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import store from '../redux/store';
 import { Provider } from 'react-redux';
 import Homepage from '../components/Homepage';
-import mockFetch from '../__mocks__/fetchAuthors';
+import mockFetch from '../components/__mocks__/fetchAuthors';
 
 let windowFetchSpy;
 
