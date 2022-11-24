@@ -37,6 +37,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 - [@lukePeavey](https://github.com/lukePeavey/quotable) Api of famouse quotes.
 - [Nelson Sakwa](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) Design idea.
+- [Wikipedia](https://en.wikipedia.org/wiki/Main_Page) for the pictures.
 
 
 ## 📝 License
