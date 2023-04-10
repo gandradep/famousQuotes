@@ -20,13 +20,13 @@ const Quotes = () => {
   }, [dispatch]);
   return (
     <div>
-      <header className="bgTitle dFlex">
+      <header className="bgTitle d-flex">
         <NavLink to="/">
           <span>&lt;</span>
         </NavLink>
         <h3 className={classess.title}>quotes</h3>
       </header>
-      <div className={`bgCLight dFlex ${classess.author}`}>
+      <div className={`bgCLight d-flex ${classess.author}`}>
         <img src={authorInfo.picture} alt={authorInfo.name} />
         <div>
           <h2>{authorInfo.name}</h2>

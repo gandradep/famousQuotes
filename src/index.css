@@ -22,16 +22,8 @@ a:active {
   color: white;
 }
 
-.dFlex {
-  display: flex;
-}
-
 .colDirFlex {
   flex-direction: column;
-}
-
-.wrap {
-  flex-wrap: wrap;
 }
 
 .w100 {

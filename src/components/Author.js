@@ -14,7 +14,7 @@ const Author = (props) => {
   return (
     <div className={`w50 ${bgclass} `}>
       <NavLink to={`/${slug}`} data-testid={`author-${index}`}>
-        <div id={id} className={`dFlex colDirFlex ${classess.divContainer}`}>
+        <div id={id} className={`d-flex colDirFlex ${classess.divContainer}`}>
           <img className={classess.imgDiv} src={picture} alt={name} />
           <h4 className={`${classess.aSelf} bold`}>
             {name}

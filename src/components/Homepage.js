@@ -13,9 +13,9 @@ const Homepage = () => {
   }, [dispatch]);
 
   return (
-    <div className="dFlex wrap authorContainer">
+    <div className="d-flex flex-wrap">
       <h3 className={`w100 bgTitle ${classes.title}`}>famous quotes</h3>
-      <div className={`dFlex bgCLight w100 ${classes.container}`}>
+      <div className={`d-flex justify-content-center align-items-center bgCLight w-100 ${classes.container}`}>
         <i className="fa-regular fa-comment" />
         <h4 className={classes.divTitle}>WORLD QUOTES</h4>
       </div>
