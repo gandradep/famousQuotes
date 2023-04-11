@@ -53,3 +53,7 @@ a:active {
 .bold {
   font-weight: 700;
 }
+
+.min-cont {
+  width: min-content;
+}

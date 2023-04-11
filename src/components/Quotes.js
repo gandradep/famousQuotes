@@ -34,7 +34,7 @@ const Quotes = () => {
         </div>
       </div>
       <h4 className="bgTitle">MOST KNOWN QUOTES:</h4>
-      <ul>
+      <ul className="p-0">
         {quotes?.map((item) => (
           <li key={item.id}>{item.content}</li>
         ))}

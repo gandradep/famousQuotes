@@ -12,10 +12,12 @@ i {
 .divTitle {
   font-size: 2rem;
   line-height: 50px;
+  width: min-content;
 }
 
 .container {
   column-gap: 30px;
   padding-top: 50px;
   padding-bottom: 50px;
+
 }

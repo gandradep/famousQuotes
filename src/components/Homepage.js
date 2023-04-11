@@ -17,7 +17,7 @@ const Homepage = () => {
       <h3 className={`w100 bgTitle ${classes.title}`}>famous quotes</h3>
       <div className={`d-flex justify-content-center align-items-center bgCLight w-100 ${classes.container}`}>
         <i className="fa-regular fa-comment" />
-        <h4 className={classes.divTitle}>WORLD QUOTES</h4>
+        <h4 className={`${classes.divTitle}`}>WORLD QUOTES</h4>
       </div>
       {authors?.map((author, index) => (
         <Author
