@@ -1,5 +1,6 @@
 .container {
   min-height: 200px;
+  padding: 20px;
 }
 .imgDiv {
   width: 110px;

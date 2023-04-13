@@ -11,6 +11,7 @@ const Author = (props) => {
   if (index % 4 === 1 || index % 4 === 2) {
     bgclass = 'bgC1';
   }
+  // console.log(slug);
   return (
     <>
       <NavLink to={`/${slug}`} data-testid={`author-${index}`} id={id} className={`d-flex flex-column flex-wrap justify-content-center align-items-center w-50 ${classess.container} ${bgclass}`}>
