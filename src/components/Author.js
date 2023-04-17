@@ -14,7 +14,7 @@ const Author = (props) => {
   // console.log(slug);
   return (
     <>
-      <NavLink to={`/${slug}`} data-testid={`author-${index}`} id={id} className={`d-flex flex-column flex-wrap justify-content-center align-items-center w-50 ${classess.container} ${bgclass}`}>
+      <NavLink to={`/${slug}`} data-testid={`author-${index}`} id={id} className={`d-flex flex-column flex-wrap justify-content-between align-items-center w-50 ${classess.container} ${bgclass}`}>
         <img className={classess.imgDiv} src={picture} alt={name} />
         <h4 className="bold min-cont align-self-sm-end">
           {name}

@@ -15,7 +15,7 @@ export const getAuthors = createAsyncThunk(
       if (pictures.get(item.slug)) {
         link = item.slug;
       } else {
-        link = 'oscar-wilde';
+        link = 'template';
       }
       const authorData = {
         name: item.name.toUpperCase(),

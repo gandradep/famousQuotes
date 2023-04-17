@@ -20,9 +20,11 @@ const Quotes = () => {
   }, [dispatch]);
   return (
     <div>
-      <header className="bgTitle d-flex">
-        <NavLink to="/">
-          <span>&lt;</span>
+      <header className="bgTitle d-flex align-items-center">
+        <NavLink to="/" className="p-2">
+          <span className="lead">
+            <i className="fa-solid fa-angle-left fa-sm" />
+          </span>
         </NavLink>
         <h3 className={classess.title}>quotes</h3>
       </header>
@@ -33,7 +35,7 @@ const Quotes = () => {
           <p>{authorInfo.description}</p>
         </div>
       </div>
-      <h4 className="bgTitle">MOST KNOWN QUOTES:</h4>
+      <h4 className="bgTitle p-2 mb-0">MOST KNOWN QUOTES:</h4>
       <ul className="p-0">
         {quotes?.map((item) => (
           <li key={item.id}>{item.content}</li>

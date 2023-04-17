@@ -13,22 +13,15 @@ pictures.set('pema-chodron', 'https://upload.wikimedia.org/wikipedia/commons/thu
 pictures.set('francis-bacon', 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Somer_Francis_Bacon.jpg/330px-Somer_Francis_Bacon.jpg');
 pictures.set('euripides', 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Euripide.jpg/330px-Euripide.jpg');
 pictures.set('eckhart-tolle', 'https://upload.wikimedia.org/wikipedia/commons/a/af/Eckhart_Tolle_front.jpg');
-// const linksPics = [
+pictures.set('oliver-wendell-holmes-jr', 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Oliver_Wendell_Holmes_Jr_circa_1930-edit.jpg/330px-Oliver_Wendell_Holmes_Jr_circa_1930-edit.jpg');
+pictures.set('template', './soul.jpg');
 
-//   ,
+// const linksPics = [
 //   'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Nicolas_de_Largilli%C3%A8re%2C_Fran%C3%A7ois-Marie_Arouet_dit_Voltaire_adjusted.png/330px-Nicolas_de_Largilli%C3%A8re%2C_Fran%C3%A7ois-Marie_Arouet_dit_Voltaire_adjusted.png',
 //   'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/George_Leite_and_Ana%C3%AFs_Nin_at_daliel%27s_bookstore_in_Berkeley%2C_CA%2C_1946.jpg/330px-George_Leite_and_Ana%C3%AFs_Nin_at_daliel%27s_bookstore_in_Berkeley%2C_CA%2C_1946.jpg',
-//   ,
-//   ,
 //   'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Bundesarchiv_Bild_183-D0116-0041-019%2C_Albert_Schweitzer.jpg/330px-Bundesarchiv_Bild_183-D0116-0041-019%2C_Albert_Schweitzer.jpg',
-//   ,
-//   ,
-//   ,
-//   ,
-//   ,
 //   'https://upload.wikimedia.org/wikipedia/commons/c/cb/H._Jackson_Brown%2C_Jr..jpg',
-//   'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Euripide.jpg/330px-Euripide.jpg',
-//   'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Oliver_Wendell_Holmes_Jr_circa_1930-edit.jpg/330px-Oliver_Wendell_Holmes_Jr_circa_1930-edit.jpg',
+//
 //   'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/John_Wooden.JPG/330px-John_Wooden.JPG',
 // ];
 
