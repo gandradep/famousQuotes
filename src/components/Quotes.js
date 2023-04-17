@@ -20,21 +20,23 @@ const Quotes = () => {
   }, [dispatch]);
   return (
     <div>
-      <header className="bgTitle dFlex">
-        <NavLink to="/">
-          <span>&lt;</span>
+      <header className="bgTitle d-flex align-items-center">
+        <NavLink to="/" className="p-2">
+          <span className="lead">
+            <i className="fa-solid fa-angle-left fa-sm" />
+          </span>
         </NavLink>
         <h3 className={classess.title}>quotes</h3>
       </header>
-      <div className={`bgCLight dFlex ${classess.author}`}>
+      <div className={`bgCLight d-flex ${classess.author}`}>
         <img src={authorInfo.picture} alt={authorInfo.name} />
         <div>
           <h2>{authorInfo.name}</h2>
           <p>{authorInfo.description}</p>
         </div>
       </div>
-      <h4 className="bgTitle">MOST KNOWN QUOTES:</h4>
-      <ul>
+      <h4 className="bgTitle p-2 mb-0">MOST KNOWN QUOTES:</h4>
+      <ul className="p-0">
         {quotes?.map((item) => (
           <li key={item.id}>{item.content}</li>
         ))}

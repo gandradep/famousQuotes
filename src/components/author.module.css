@@ -1,17 +1,10 @@
+.container {
+  min-height: 200px;
+  padding: 20px;
+}
+
 .imgDiv {
   width: 110px;
   height: 120px;
   margin-bottom: 15px;
-}
-
-.divContainer {
-  align-items: center;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  row-gap: 5px;
-}
-
-.aSelf {
-  align-self: flex-end;
-  padding-right: 15px;
 }

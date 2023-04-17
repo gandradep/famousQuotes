@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import linkPics from './picturesLinks';
+import pictures from './picturesLinks';
 
 const AUTHORS_FETCHED = 'quotes/homepage/AUTHORS_FETCHED';
 const urlApi = 'https://quotable.io/authors?sortBy=quoteCount&order=desc&page=3';
@@ -10,8 +10,13 @@ export const getAuthors = createAsyncThunk(
     const data = await fetch(urlApi)
       .then((response) => response.json());
     const authorList = [];
-    let counter = 0;
     data.results.forEach((item) => {
+      let link = '';
+      if (pictures.get(item.slug)) {
+        link = item.slug;
+      } else {
+        link = 'template';
+      }
       const authorData = {
         name: item.name.toUpperCase(),
         slug: item.slug,
@@ -19,9 +24,8 @@ export const getAuthors = createAsyncThunk(
         id: item._id,
         quotes: item.quoteCount,
         description: item.description,
-        picture: linkPics[counter],
+        picture: pictures.get(link),
       };
-      counter += 1;
       authorList.push(authorData);
     });
     return authorList;

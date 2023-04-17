@@ -11,20 +11,19 @@ const Author = (props) => {
   if (index % 4 === 1 || index % 4 === 2) {
     bgclass = 'bgC1';
   }
+  // console.log(slug);
   return (
-    <div className={`w50 ${bgclass} `}>
-      <NavLink to={`/${slug}`} data-testid={`author-${index}`}>
-        <div id={id} className={`dFlex colDirFlex ${classess.divContainer}`}>
-          <img className={classess.imgDiv} src={picture} alt={name} />
-          <h4 className={`${classess.aSelf} bold`}>
-            {name}
-          </h4>
-          <span className={classess.aSelf}>
-            {quotes}
-          </span>
-        </div>
+    <>
+      <NavLink to={`/${slug}`} data-testid={`author-${index}`} id={id} className={`d-flex flex-column flex-wrap justify-content-between align-items-center w-50 ${classess.container} ${bgclass}`}>
+        <img className={classess.imgDiv} src={picture} alt={name} />
+        <h4 className="bold min-cont align-self-sm-end">
+          {name}
+        </h4>
+        <span className="align-self-sm-end">
+          {quotes}
+        </span>
       </NavLink>
-    </div>
+    </>
   );
 };
 Author.propTypes = {
