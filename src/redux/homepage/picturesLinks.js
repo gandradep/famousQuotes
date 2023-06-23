@@ -14,8 +14,13 @@ pictures.set('francis-bacon', 'https://upload.wikimedia.org/wikipedia/commons/th
 pictures.set('euripides', 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Euripide.jpg/330px-Euripide.jpg');
 pictures.set('eckhart-tolle', 'https://upload.wikimedia.org/wikipedia/commons/a/af/Eckhart_Tolle_front.jpg');
 pictures.set('oliver-wendell-holmes-jr', 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Oliver_Wendell_Holmes_Jr_circa_1930-edit.jpg/330px-Oliver_Wendell_Holmes_Jr_circa_1930-edit.jpg');
+pictures.set('napoleon', 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg/220px-Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg');
+pictures.set('charles-dickens', 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Dickens_Gurney_head.jpg/220px-Dickens_Gurney_head.jpg');
+pictures.set('warren-buffett', 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Warren_Buffett_KU_Visit.jpg/220px-Warren_Buffett_KU_Visit.jpg');
+pictures.set('albert-schweitzer', 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Bundesarchiv_Bild_183-D0116-0041-019%2C_Albert_Schweitzer.jpg/220px-Bundesarchiv_Bild_183-D0116-0041-019%2C_Albert_Schweitzer.jpg');
+pictures.set('voltaire', 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Atelier_de_Nicolas_de_Largilli%C3%A8re%2C_portrait_de_Voltaire%2C_d%C3%A9tail_%28mus%C3%A9e_Carnavalet%29_-002.jpg/220px-Atelier_de_Nicolas_de_Largilli%C3%A8re%2C_portrait_de_Voltaire%2C_d%C3%A9tail_%28mus%C3%A9e_Carnavalet%29_-002.jpg');
+pictures.set('anais-nin', 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Anais_Nin.jpg/200px-Anais_Nin.jpg');
 pictures.set('template', './soul.jpg');
-
 // const linksPics = [
 //   'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Nicolas_de_Largilli%C3%A8re%2C_Fran%C3%A7ois-Marie_Arouet_dit_Voltaire_adjusted.png/330px-Nicolas_de_Largilli%C3%A8re%2C_Fran%C3%A7ois-Marie_Arouet_dit_Voltaire_adjusted.png',
 //   'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/George_Leite_and_Ana%C3%AFs_Nin_at_daliel%27s_bookstore_in_Berkeley%2C_CA%2C_1946.jpg/330px-George_Leite_and_Ana%C3%AFs_Nin_at_daliel%27s_bookstore_in_Berkeley%2C_CA%2C_1946.jpg',
